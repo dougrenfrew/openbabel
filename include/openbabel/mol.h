@@ -458,6 +458,7 @@ enum HydrogenType { AllHydrogen, PolarHydrogen, NonPolarHydrogen };
     //! Transform to standard Kekule bond structure (presumably from an aromatic form)
 
     bool Kekulize();
+    bool UnKekulize();
     bool PerceiveKekuleBonds();
 
     void NewPerceiveKekuleBonds();

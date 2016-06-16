@@ -823,6 +823,8 @@ namespace OpenBabel
 
     PerceiveStereo(&mol);
 
+    mol.UnKekulize();
+
     if (pConv->GetOutputIndex()==1)
       HasProperties = false;
 

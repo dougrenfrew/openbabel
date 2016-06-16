@@ -1,4 +1,4 @@
-/********************************************************************** 
+/**********************************************************************
 mol.cpp - Handle molecules.
 
 Copyright (C) 1998-2001 by OpenEye Scientific Software, Inc.
@@ -2901,6 +2901,18 @@ namespace OpenBabel
         bond->SetBO(2);
       else if (bond->IsKTriple())
         bond->SetBO(3);
+
+    return(true);
+  }
+
+  bool OBMol::UnKekulize()
+  {
+    OBBond *bond;
+    vector<OBBond*>::iterator i;
+
+    for (bond = BeginBond(i);bond;bond = NextBond(i))
+      if(bond->IsAromatic())
+	bond->SetBO(4); // should be aromatic in MDL format
 
     return(true);
   }
