@@ -1,7 +1,7 @@
 Open Babel README version 2.3.0
 -------------------------------
 
-__NOTE:__ _This vopy of OpenBabel has been modified to produce v2000 mol files with v3000 aromatic bonds rather than the standard Kekulé arrangment of alternating single and double bonds._
+__NOTE:__ _This copy of OpenBabel has been modified to produce v2000 mol files with v3000 aromatic bonds rather than the standard Kekulé arrangment of alternating single and double bonds._
 
 ---
 
